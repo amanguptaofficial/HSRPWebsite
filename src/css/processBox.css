@@ -1,0 +1,46 @@
+@import url(https://fonts.googleapis.com/css?family=PT+Sans);
+*, *:after, *:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+.image-box-process {
+    text-align: center;
+    max-width: 270px;
+    margin: 10px auto;
+    padding: 20px;
+    background-color: #f2f2f2;
+    border-radius: 1.5em;
+    height: 230px; /* Set a fixed height */
+  
+  }
+  .image-box-process:hover{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .image-box-process img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+   
+  }
+  
+  .image-box-process h2 {
+    margin-top: 12px;
+    color: #333;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 24px;
+  }
+  .image-box-process p {
+    white-space: wrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #666;
+    line-height: 1.5;
+    font-size: 16px;
+  }
+  
+  /* .image-box-process p {
+    color: #666;
+    line-height: 1.5;
+  } */

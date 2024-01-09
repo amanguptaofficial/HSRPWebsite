@@ -1,0 +1,18 @@
+.box{
+    width: 100%;
+    background-color: whitesmoke;
+    
+}
+
+.title{
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    padding: 29px;
+    color:darkmagenta;
+}
+.box-container{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}

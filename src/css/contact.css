@@ -1,0 +1,10 @@
+.center-container {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    width: 100%;
+    /* height: 100vh; Adjust this if necessary to control the height of the container */
+  }
+  p{
+    font-size: 15px;
+  }

@@ -1,0 +1,43 @@
+.about-box{
+    font-family: Arial, sans-serif;
+    margin: 7px;
+    padding: 30px;
+    line-height: 1.4rem;
+    font-size: 2.25rem;
+    line-height: 2.5rem
+
+
+}
+
+
+.info-list {
+    max-width: 800px;
+    /* margin: 50px auto; */
+}
+
+.info-item {
+    display: flex;
+    margin-bottom: 20px;
+    
+}
+
+.info-number {
+    font-size: 1.2rem;
+    margin-right: 10px;
+    color: #333;
+   
+}
+
+.info-content {
+    flex-grow: 1;
+    
+}
+
+h2 {
+    color: #333;
+}
+
+p {
+    color: #666;
+    font-size: 18px;
+}

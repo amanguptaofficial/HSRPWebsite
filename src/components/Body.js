@@ -11,7 +11,7 @@ import axios from "axios";
 
 
 const Body = () => {
-
+  const [bool,setBool] = useState(false)
   const [validated, setValidated] = useState(false);
   const [plateNumber, setPlatNumber] = useState("");
   const [state, setState] = useState("");
@@ -58,7 +58,7 @@ const Body = () => {
         "https://hsrp-9ca53947876f.herokuapp.com/api/v1/hrsp/vehicle/upload",
       data
     );
-   
+      setBool(true)
     if(res?.data?.code==200){
       
     }
@@ -67,7 +67,7 @@ const Body = () => {
 
   function callMeToRedirectPayementPage() {
     // window.open("/payment");
-    window.location.href = '/payment';
+    // window.location.href = '/payment';
   }
 
   const handleSubmit = (event) => {
@@ -109,7 +109,9 @@ const Body = () => {
     setEmailId(event?.target?.value);
   }
 
-  return (
+  return bool ? (
+    <Payment />
+  ) :  (
     <>
       <div className="parent-container">
         <div className="main-head-line">

@@ -56,9 +56,9 @@ const Body = () => {
         "https://hsrp-9ca53947876f.herokuapp.com/api/v1/hrsp/vehicle/upload",
       data
     );
-
+   
     if(res?.data?.code==200){
-        callMeToRedirectPayementPage();
+      
     }
    
   }
@@ -79,6 +79,7 @@ const Body = () => {
     if (form.checkValidity()) {
       let obj = { plateNumber, state, name, mobile, emailId, vehicleNumber };
       saveFormData(obj);
+      callMeToRedirectPayementPage();
       form.reset();
       setValidated(false);
     }
@@ -153,6 +154,7 @@ const Body = () => {
                   </InputGroup.Text>
                   <Form.Control
                     required
+                    style={{width:'55%'}}
                     type="text"
                     aria-label="Default"
                     aria-describedby="inputGroup-sizing-default"
@@ -190,6 +192,7 @@ const Body = () => {
                     Mobile No
                   </InputGroup.Text>
                   <Form.Control
+                    maxLength="10"
                     pattern="^\d{10}$"
                     required
                     type="text"
@@ -210,7 +213,7 @@ const Body = () => {
                     E-mail ID
                   </InputGroup.Text>
                   <Form.Control
-                   pattern="^[a-zA-Z0-9](\.?[a-zA-Z0-9]){5,}@gmail\.com$"
+                    pattern="^[a-zA-Z0-9](\.?[a-zA-Z0-9]){2,}@gmail\.com$"
                     type="email"
                     aria-label="Default"
                     required

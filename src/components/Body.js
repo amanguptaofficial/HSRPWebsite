@@ -9,7 +9,9 @@ import Footer from "./Footer";
 import { useEffect, useState } from "react";
 import axios from "axios";
 
+
 const Body = () => {
+
   const [validated, setValidated] = useState(false);
   const [plateNumber, setPlatNumber] = useState("");
   const [state, setState] = useState("");
@@ -64,7 +66,8 @@ const Body = () => {
   }
 
   function callMeToRedirectPayementPage() {
-    window.open("/payment");
+    // window.open("/payment");
+    window.location.href = '/payment';
   }
 
   const handleSubmit = (event) => {
